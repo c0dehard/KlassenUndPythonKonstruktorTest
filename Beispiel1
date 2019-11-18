@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import os
+
+class Panda():
+    def __init__(self,GibName):self.name = GibName
+    def welcheFarbenHat(self,name,sagtWer):print(f'{sagtWer} sagt:,,{name} hat ein schwarz-weißes Fell wie jeder Panda!"')
+    def magZuege(self,wieOft):
+        print("Ich mag Züge, "*wieOft+'..!')
+
+if __name__ == "__main__":
+    c0deNc0dehard = Panda(input("Zum Test: Wie ist dein Pandaname?\n"))
+    if c0deNc0dehard.name != None : print("Alles super.",input("Beliebige Taste für WEITER.."))
+
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    alf,berta,caesar=Panda("Alf"),Panda("Berta"),Panda("Caesar")
+    alf.welcheFarbenHat(caesar.name,alf.name)
+    berta.magZuege(7)
