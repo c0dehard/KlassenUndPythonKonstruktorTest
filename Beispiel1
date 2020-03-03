@@ -12,7 +12,7 @@ if __name__ == "__main__":
     c0deNc0dehard = Panda(input("Zum Test: Wie ist dein Pandaname?\n"))
     if c0deNc0dehard.name != None : print("Alles super.",input("Beliebige Taste für WEITER.."))
 
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear' if os.name != 'nt' else 'cls')
 
     alf,berta,caesar=Panda("Alf"),Panda("Berta"),Panda("Caesar")
     alf.welcheFarbenHat(caesar.name,alf.name)
